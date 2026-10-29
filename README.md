@@ -15,7 +15,7 @@ Most of my recent open-source work is about one question: how do you know whethe
 
 ### Libraries
 
-Six small, single-purpose Python packages. Each ships with tests and a worked example, and each README states plainly what the tool does not do.
+Seven small, single-purpose Python packages. Each ships with tests and a worked example, and each README states plainly what the tool does not do.
 
 | Library | What it does |
 |---|---|
@@ -25,6 +25,7 @@ Six small, single-purpose Python packages. Each ships with tests and a worked ex
 | [SliceSniff](https://github.com/habib-analyst/slicesniff) | Mines a classifier's predictions for the slices where it is confidently wrong, and returns ranked, reproducible failure cards: the slice definition, accuracy against confidence, and the exact example indices. |
 | [ProbeShift](https://github.com/habib-analyst/probeshift) | Measures how little an image must change before a prediction flips — the smallest effective brightness, contrast, blur, noise, shift, or rotation — for any predict function, and summarises the result as a fragility score. |
 | [DriftReceipt](https://github.com/habib-analyst/driftreceipt) | Compares two windows of logged predictions from a deployed classifier and returns a GO / CAUTION / NO-GO drift receipt: what shifted, in which metadata slice, and the exact rows driving the change. |
+| [ChoiceShift](https://github.com/habib-analyst/choiceshift) | Permutes the options of multiple-choice benchmark questions and measures how much an LLM's answers move: stability score, flip rate, and the accuracy range a single benchmark number hides. |
 
 ### Models & live demos
 
