@@ -30,7 +30,7 @@ Eight small, single-purpose Python packages. Each ships with tests and a worked 
 
 ### Models & live demos
 
-Four models, each released on GitHub and Hugging Face with a live demo. Every headline number below is the number on the model card, re-derived from the released weights by the verification script in its repository.
+Five models, each released on GitHub and Hugging Face; the first four also have live demos. Every headline number below is the number on the model card, re-derived from the released weights by the verification script in its repository.
 
 | Model | Task | Headline result | Links |
 |---|---|---|---|
@@ -38,6 +38,7 @@ Four models, each released on GitHub and Hugging Face with a live demo. Every he
 | PathoCNN | PathMNIST — 9-class classification of colorectal histology patches | Test accuracy 0.8712 · macro AUC 0.9855, on a test split collected at a different clinical center | [GitHub](https://github.com/habib-analyst/pathocnn) · [Hugging Face](https://huggingface.co/habib-analyst/pathocnn) · [Live demo](https://huggingface.co/spaces/habib-analyst/pathocnn-demo) |
 | Sukhan-Nano | Urdu language model (5.57M parameters), trained from scratch on a documented, openly licensed corpus | Held-out perplexity 48.48 | [GitHub](https://github.com/habib-analyst/sukhan-nano) · [Hugging Face](https://huggingface.co/habib-analyst/sukhan-nano) · [Live demo](https://huggingface.co/spaces/habib-analyst/sukhan-nano-demo) |
 | Nuqta-Nano | Roman Urdu → Urdu script transliteration, one word at a time | Held-out corpus CER 0.2020 · exact-match 0.3606 on unseen words | [GitHub](https://github.com/habib-analyst/nuqta-nano) · [Hugging Face](https://huggingface.co/habib-analyst/nuqta-nano) · [Live demo](https://huggingface.co/spaces/habib-analyst/nuqta-nano-demo) |
+| Awaaz-Nano | Urdu speech recognition — character-level CTC trained from scratch on FLEURS ur_pk, no pretrained weights | Held-out test CER 0.5131 · WER 0.9852 — honestly weak; an educational end-to-end ASR run, not usable transcription | [GitHub](https://github.com/habib-analyst/awaaz-nano) · [Hugging Face](https://huggingface.co/habib-analyst/awaaz-nano) |
 
 The model cards also list the weak spots — PathoCNN's weakest class, Nuqta-Nano's systematic letter errors — rather than only the headline numbers.
 
