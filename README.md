@@ -1,131 +1,53 @@
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=2196F3&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Habib+Ur+Rehman+%F0%9F%91%8B;Data+Scientist+%7C+AI%2FML+Researcher;Deep+Learning+Enthusiast;Published+Author+%26+Innovator" alt="Typing SVG" />
-</div>
+# Habib Ur Rehman
 
-## 🚀 About Me
+ML/AI engineer working on healthcare AI. I build models, then build the tools that check them — and I release both with the evidence attached: tests, evaluation scripts, and the failure cases included.
 
-**🎓 Data Science Student | 🔬 AI/ML Researcher | 📊 Business Intelligence Expert**
+## What I do
 
-- 🏛️ **Education:** BS Data Science/Analytics @ Government College University Faisalabad
-- 🔬 **Research:** Undergraduate Research Assistant @ Center of Data Science, GCUF
-- 📄 **Publications:** 3+ papers in top-tier journals (Elsevier, SAJB, EJET)
-- 🏆 **Achievements:** 99.5% accuracy in medical AI diagnosis systems
-- 💼 **Experience:** ML Internship @ NextGen Learner, Hardware Technician @ Rex City
+- ML/AI Engineer at SANWA SYSTEM SERVICE CO. LTD (Jul 2025 – present): training, evaluating, and deploying ML models on custom datasets, including ML/AI work on ERP systems.
+- Before that, Undergraduate Research Assistant at the Center of Data Science, GCUF (Dec 2024 – Jun 2025), working on transformer-based medical imaging.
+- BS in Data Analytics, Government College University Faisalabad (2021 – 2025).
+- Core stack: Python, PyTorch, TensorFlow, Hugging Face, LangChain / LangGraph, FastAPI, Docker, SQL.
 
-### 🎯 Current Focus
-- 🔭 Working on **Medical AI Diagnosis Systems** with Vision Transformers
-- 🌱 Researching **Multimodal Deepfake Detection** frameworks
-- 👯 Building **Interactive Power BI Dashboards** for business intelligence
-- 💬 Exploring **Federated Learning Security** with GANs and blockchain
-- 📫 Open to collaborations in **AI/ML research** and **data science projects**
+Most of my recent open-source work is about one question: how do you know whether a classifier deserves trust? The libraries below each take one part of that question. The models are small, trained from scratch, and published with scripts that re-derive their headline metrics from the released weights.
 
-## 🛠️ Technical Arsenal
+## Open-source libraries & models
 
-### Programming Languages
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
-  <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-</p>
+### Libraries
 
-### AI/ML & Deep Learning
-<p align="center">
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-</p>
+Six small, single-purpose Python packages. Each ships with tests and a worked example, and each README states plainly what the tool does not do.
 
-### Data Science & Analytics
-<p align="center">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white" />
-  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-</p>
+| Library | What it does |
+|---|---|
+| [ViewConsensus](https://github.com/habib-analyst/viewconsensus) | Runs a trained image classifier over a panel of transformed views of the same input, and returns the consensus probability, the view-spread as uncertainty, the per-view votes, and a verdict: confident, or unsure — defer to a human. |
+| [DatasetReceipt](https://github.com/habib-analyst/datasetreceipt) | Scans an image dataset before training for cross-split leakage, metadata shortcuts, and background-only label signals, and returns one verdict: GO, CAUTION, or NO-GO. |
+| [ViewTrainer](https://github.com/habib-analyst/viewtrainer) | The train-time sibling of ViewConsensus. Trains a PyTorch classifier so its augmented views agree, then predicts with the same panel, uncertainty, votes, and defer verdict, behind one `fit` / `evaluate` / `predict` Trainer. |
+| [SliceSniff](https://github.com/habib-analyst/slicesniff) | Mines a classifier's predictions for the slices where it is confidently wrong, and returns ranked, reproducible failure cards: the slice definition, accuracy against confidence, and the exact example indices. |
+| [ProbeShift](https://github.com/habib-analyst/probeshift) | Measures how little an image must change before a prediction flips — the smallest effective brightness, contrast, blur, noise, shift, or rotation — for any predict function, and summarises the result as a fragility score. |
+| [DriftReceipt](https://github.com/habib-analyst/driftreceipt) | Compares two windows of logged predictions from a deployed classifier and returns a GO / CAUTION / NO-GO drift receipt: what shifted, in which metadata slice, and the exact rows driving the change. |
 
-### Business Intelligence
-<p align="center">
-  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white" />
-  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
-</p>
+### Models & live demos
 
-### Development Tools
-<p align="center">
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-</p>
+Four models, each released on GitHub and Hugging Face with a live demo. Every headline number below is the number on the model card, re-derived from the released weights by the verification script in its repository.
 
-## 🔥 Featured Projects
+| Model | Task | Headline result | Links |
+|---|---|---|---|
+| SonoCNN | BreastMNIST — benign vs. malignant classification of 28×28 breast-ultrasound images | Test accuracy 0.8718 · ROC AUC 0.8709 | [GitHub](https://github.com/habib-analyst/sonocnn) · [Hugging Face](https://huggingface.co/habib-analyst/sonocnn) · [Live demo](https://huggingface.co/spaces/habib-analyst/sonocnn-demo) |
+| PathoCNN | PathMNIST — 9-class classification of colorectal histology patches | Test accuracy 0.8712 · macro AUC 0.9855, on a test split collected at a different clinical center | [GitHub](https://github.com/habib-analyst/pathocnn) · [Hugging Face](https://huggingface.co/habib-analyst/pathocnn) · [Live demo](https://huggingface.co/spaces/habib-analyst/pathocnn-demo) |
+| Sukhan-Nano | Urdu language model (5.57M parameters), trained from scratch on a documented, openly licensed corpus | Held-out perplexity 48.48 | [GitHub](https://github.com/habib-analyst/sukhan-nano) · [Hugging Face](https://huggingface.co/habib-analyst/sukhan-nano) · [Live demo](https://huggingface.co/spaces/habib-analyst/sukhan-nano-demo) |
+| Nuqta-Nano | Roman Urdu → Urdu script transliteration, one word at a time | Held-out corpus CER 0.2020 · exact-match 0.3606 on unseen words | [GitHub](https://github.com/habib-analyst/nuqta-nano) · [Hugging Face](https://huggingface.co/habib-analyst/nuqta-nano) · [Live demo](https://huggingface.co/spaces/habib-analyst/nuqta-nano-demo) |
 
-<div align="center">
+The model cards also list the weak spots — PathoCNN's weakest class, Nuqta-Nano's systematic letter errors — rather than only the headline numbers.
 
-### 🏥 [Multi-Disease Diagnosis with ViT & Perceiver IO](https://github.com/habib-analyst/Medical-AI-Diagnosis)
-**🎯 99.5% Accuracy | 📄 Published in Elsevier Journal**
-> Hybrid Vision Transformer + Perceiver IO model for medical image classification across 6 diseases using 30,000+ multi-modal images with real-time diagnostic chatbot integration.
-### 🎭 [Multimodal Deepfake Detection Framework](https://github.com/habib-analyst/Deepfake-Detection)
-**🎯 92.85% SOTA Accuracy | 🔊 Audio-Visual Fusion**
-> Advanced deepfake detection using Fourier token mixing for dual-stream video and audio verification on FakeAVCeleb, WLD, and PDD datasets.
-### 📊 [Power BI Dashboard Portfolio]((https://github.com/habib-analyst/Power-BI-Dashboards))
-**🎯 Interactive Business Intelligence | 📈 Multi-Industry Analytics**
-> Professional Power BI dashboard collection featuring cryptocurrency market analysis, Amazon sales intelligence, Netflix-Hotstar-Disney+ streaming analytics, and comprehensive business intelligence solutions with interactive visualizations and real-time insights.
-### 🔒 [Federated Learning Security with GANs](https://github.com/habib-analyst/Federated-Learning-Security)
-**🎯 95% Accuracy | 🛡️ 98% Attack Detection**
-> Novel secure federated learning architecture combining GANs, blockchain, and differential privacy for healthcare and finance applications.
-</div>
+## Research & background
 
-## 📚 Recent Publications
+- Healthcare-AI research at the Center of Data Science, GCUF: transformer-based medical imaging pipelines (Vision Transformers with Perceiver IO), experiments, documentation, and manuscript writing.
+- Other 2025 research: multimodal deepfake detection (Multimodal-FNet — Fourier token mixing for audio-video inconsistency) and a federated-learning security framework combining GANs, blockchain, and differential privacy.
+- I maintain a reproducibility benchmark for MedMNIST v2 — 12 2D and 6 3D datasets across multiple seeds — because reported numbers should be repeatable: [MedMNIST_v2_Reproducibility_Benchmark](https://github.com/habib-analyst/MedMNIST_v2_Reproducibility_Benchmark).
 
-1. **"Revolutionizing Medical Imaging: A Cutting-Edge AI Framework with ViT and PIO"**  
-   *Computational Biology and Chemistry (Elsevier)* - 2025
+## Contact
 
-2. **"AI-Driven Risk Assessment and Mitigation Strategies for Optimizing Project Success"**  
-   *Scholars Academic Journal of Biosciences (SAJB)* - 2025
-
-3. **"A Unified Framework for Enhancing Federated Learning Security Using GAN"**  
-   *European Journal of Engineering and Technology (EJET)* - 2025
-
-## 🌐 Professional Network
-
-<div align="center">
-  <a href="https://linkedin.com/in/habib-analyst" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:habib.gcuf.edu@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://habib.top/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
-  </a>
-</div>
-
-## 💡 What I'm Learning
-
-- 🧠 **Advanced Transformer Architectures** (GPT, BERT, Vision Transformers)
-- 🔐 **MLOps & Model Deployment** (Docker, Kubernetes, CI/CD)
-- 🌐 **Cloud Computing** (Google Cloud Platform, AWS)
-- 📊 **Advanced Analytics** (Time Series, Forecasting, A/B Testing)
-- 🤖 **Generative AI** (GANs, Diffusion Models, LLMs)
-
-## 🎯 2025 Goals
-
-- [ ] Publish 2+ more research papers in top-tier journals
-- [ ] Complete advanced ML specialization certifications
-- [ ] Build and deploy 5+ production-ready AI applications
-- [ ] Contribute to 10+ open-source AI/ML projects
-- [ ] Speak at 2+ data science conferences
-- [ ] Mentor 5+ junior data scientists
-
----
-
-<div align="center">
-  <h3>💫 "Transforming Data into Insights, Ideas into Innovation" 💫</h3>
-  <p><i>⭐️ From <a href="https://github.com/habib-analyst">Habib Ur Rehman</a> - Let's build the future with AI! 🚀</i></p>
-</div>
+- GitHub: [github.com/habib-analyst](https://github.com/habib-analyst)
+- LinkedIn: [linkedin.com/in/hur-dev](https://www.linkedin.com/in/hur-dev)
+- Website: [habib.top](https://habib.top)
+- Email: [habib.gcuf.edu@gmail.com](mailto:habib.gcuf.edu@gmail.com)
