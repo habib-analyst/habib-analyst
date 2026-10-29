@@ -30,7 +30,7 @@ Eight small, single-purpose Python packages. Each ships with tests and a worked 
 
 ### Models & live demos
 
-Seven models, each released on GitHub and Hugging Face; the first six also have live demos. Every headline number below is the number on the model card, re-derived from the released weights by the verification script in its repository.
+Seven models, each released on GitHub and Hugging Face with a live demo. Every headline number below is the number on the model card, re-derived from the released weights by the verification script in its repository.
 
 | Model | Task | Headline result | Links |
 |---|---|---|---|
@@ -40,7 +40,7 @@ Seven models, each released on GitHub and Hugging Face; the first six also have 
 | Nuqta-Nano | Roman Urdu → Urdu script transliteration, one word at a time | Held-out corpus CER 0.2020 · exact-match 0.3606 on unseen words | [GitHub](https://github.com/habib-analyst/nuqta-nano) · [Hugging Face](https://huggingface.co/habib-analyst/nuqta-nano) · [Live demo](https://huggingface.co/spaces/habib-analyst/nuqta-nano-demo) |
 | Awaaz-Nano | Urdu speech recognition — character-level CTC trained from scratch on FLEURS ur_pk, no pretrained weights | Held-out test CER 0.5131 · WER 0.9852 — honestly weak; an educational end-to-end ASR run, not usable transcription | [GitHub](https://github.com/habib-analyst/awaaz-nano) · [Hugging Face](https://huggingface.co/habib-analyst/awaaz-nano) · [Live demo](https://huggingface.co/spaces/habib-analyst/awaaz-nano-demo) |
 | VesselCNN | VesselMNIST3D — vessel vs. aneurysm classification of 28×28×28 brain-vessel volumes with a tiny 3D CNN | Test accuracy 0.7539 — below the 0.8874 majority baseline; aneurysm recall 0.4884. A measured failure with an interpretable cause, published as-is | [GitHub](https://github.com/habib-analyst/vesselcnn) · [Hugging Face](https://huggingface.co/habib-analyst/vesselcnn) · [Live demo](https://huggingface.co/spaces/habib-analyst/vesselcnn-demo) |
-| OrganCNN | OrganMNIST3D — 11-class classification of 28×28×28 organ volumes with a tiny 3D CNN | Test accuracy 0.8574 · macro AUC 0.9860; 61% of its errors are left/right confusions (femur-left recall 0.5692) | [GitHub](https://github.com/habib-analyst/organcnn) · [Hugging Face](https://huggingface.co/habib-analyst/organcnn) |
+| OrganCNN | OrganMNIST3D — 11-class classification of 28×28×28 organ volumes with a tiny 3D CNN | Test accuracy 0.8574 · macro AUC 0.9860; 61% of its errors are left/right confusions (femur-left recall 0.5692) | [GitHub](https://github.com/habib-analyst/organcnn) · [Hugging Face](https://huggingface.co/habib-analyst/organcnn) · [Live demo](https://huggingface.co/spaces/habib-analyst/organcnn-demo) |
 
 The model cards also list the weak spots — PathoCNN's weakest class, Nuqta-Nano's systematic letter errors — rather than only the headline numbers.
 
