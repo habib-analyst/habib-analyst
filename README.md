@@ -15,7 +15,7 @@ Most of my recent open-source work is about one question: how do you know whethe
 
 ### Libraries
 
-Seven small, single-purpose Python packages. Each ships with tests and a worked example, and each README states plainly what the tool does not do.
+Eight small, single-purpose Python packages. Each ships with tests and a worked example, and each README states plainly what the tool does not do.
 
 | Library | What it does |
 |---|---|
@@ -26,6 +26,7 @@ Seven small, single-purpose Python packages. Each ships with tests and a worked 
 | [ProbeShift](https://github.com/habib-analyst/probeshift) | Measures how little an image must change before a prediction flips — the smallest effective brightness, contrast, blur, noise, shift, or rotation — for any predict function, and summarises the result as a fragility score. |
 | [DriftReceipt](https://github.com/habib-analyst/driftreceipt) | Compares two windows of logged predictions from a deployed classifier and returns a GO / CAUTION / NO-GO drift receipt: what shifted, in which metadata slice, and the exact rows driving the change. |
 | [ChoiceShift](https://github.com/habib-analyst/choiceshift) | Permutes the options of multiple-choice benchmark questions and measures how much an LLM's answers move: stability score, flip rate, and the accuracy range a single benchmark number hides. |
+| [ShotShift](https://github.com/habib-analyst/shotshift) | Permutes the demonstrations in a few-shot prompt and measures how much a classifier's predictions move, with per-query flip cards and leave-one-out example influence. |
 
 ### Models & live demos
 
