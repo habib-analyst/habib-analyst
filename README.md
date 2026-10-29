@@ -15,7 +15,7 @@ Most of my recent open-source work is about one question: how do you know whethe
 
 ### Libraries
 
-Eight small, single-purpose Python packages. Each ships with tests and a worked example, and each README states plainly what the tool does not do.
+Nine small, single-purpose Python packages. Each ships with tests and a worked example, and each README states plainly what the tool does not do.
 
 | Library | What it does |
 |---|---|
@@ -27,6 +27,7 @@ Eight small, single-purpose Python packages. Each ships with tests and a worked 
 | [DriftReceipt](https://github.com/habib-analyst/driftreceipt) | Compares two windows of logged predictions from a deployed classifier and returns a GO / CAUTION / NO-GO drift receipt: what shifted, in which metadata slice, and the exact rows driving the change. |
 | [ChoiceShift](https://github.com/habib-analyst/choiceshift) | Permutes the options of multiple-choice benchmark questions and measures how much an LLM's answers move: stability score, flip rate, and the accuracy range a single benchmark number hides. |
 | [ShotShift](https://github.com/habib-analyst/shotshift) | Permutes the demonstrations in a few-shot prompt and measures how much a classifier's predictions move, with per-query flip cards and leave-one-out example influence. |
+| [ForkPoint](https://github.com/habib-analyst/forkpoint) | Runs a probe set through two versions of the same ONNX model and localizes where a conversion (quantization, FP16 cast, re-export) makes them diverge: per-node divergence ranking, the first-divergence fork point, and a card for every input whose prediction flips. |
 
 ### Models & live demos
 
